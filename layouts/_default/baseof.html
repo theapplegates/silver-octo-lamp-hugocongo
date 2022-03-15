@@ -33,6 +33,16 @@
       >
     </div>
     {{- partial "header.html" . -}}
+    <form class="d-flex" id="search-form">
+        <div class="input-group">
+            <input
+              type="search"
+              id="autocomplete"
+              class="form-control"
+              placeholder="Search"
+            >
+        </div>
+    </form>
     <main id="main-content" class="relative grow">
       {{- block "main" . }}{{- end }}
       {{ if and (.Site.Params.showScrollToTop | default true) (gt .WordCount 200) }}
