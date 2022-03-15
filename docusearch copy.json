@@ -1,0 +1,47 @@
+{
+	"index_name": "index",
+	"scrape_start_urls": false,
+	"start_urls": [{
+			"url": "https://congo.paulapplegate.com/docs/",
+			"selectors_key": "docs",
+			"page_rank": 2
+		},
+		{
+			"url": "https://congo.paulapplegate.com/samples/",
+			"selectors_key": "samples",
+			"page_rank": 2
+		},
+		{
+			"url": "https://congo.paulapplegate.com",
+			"page_rank": 1
+		}
+	],
+	"sitemap_urls": [
+		"https://congo.paulapplegate.com/sitemap.xml"
+	],
+"selectors": {
+"lvl0": "#content header h1",
+"lvl1": "#content article h1",
+"lvl2": "#content section h3",
+"lvl3": "#content section h4",
+"lvl4": "#content section h5",
+"lvl5": "#content section h6",
+"text": "#content header p,#content section p,#content section ol"
+		}
+	},
+	"docs": {
+		"lvl0": {
+			"selector": "h1",
+			"default_value": "Docs"
+		},
+		"lvl1": ".tag-title h2"
+	},
+	"samples": {
+		"lvl0": {
+			"selector": "h1",
+			"default_value": "Samples"
+		},
+		"lvl1": ".series-title h2"
+	}
+
+}
